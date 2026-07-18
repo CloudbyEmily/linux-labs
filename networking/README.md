@@ -149,3 +149,27 @@ A website can fail because of different layers:
 4. Application/service problem
 
 Understanding where the failure occurs helps cloud engineers troubleshoot efficiently.
+# Cloud Engineer Troubleshooting Flow
+
+When a user reports that a website is unavailable, cloud engineers troubleshoot by identifying which layer of the system is failing.
+
+## Troubleshooting Layers
+
+### 1. DNS
+
+Question:
+
+"Is the domain name pointing to the correct destination?"
+
+Possible issues:
+
+- DNS record not updated
+- Domain pointing to the wrong server
+- DNS resolution failure
+
+Tools:
+
+```bash
+nslookup domain.com
+dig domain.com
+ping domain.com
