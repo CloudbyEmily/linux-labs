@@ -117,3 +117,35 @@ Checking listening ports helps determine whether an application is ready to rece
 For example, if a web server should be accepting HTTPS traffic on port 443 but nothing is listening on that port, users will not be able to reach the website even if the server is running.
 
 Viewing listening ports is a common step when troubleshooting application and network connectivity issues.
+# DNS Basics
+
+## What is DNS?
+
+DNS (Domain Name System) translates human-readable domain names into IP addresses that computers use to communicate.
+
+Example:
+
+google.com → IP address
+
+## Using ping for DNS Testing
+
+The ping command can show whether a domain name successfully resolves to an IP address.
+
+Example:
+
+ping -c 2 google.com
+
+If DNS works, the output will display the resolved IP address.
+
+Cloud engineers use DNS troubleshooting to determine whether problems are caused by name resolution, networking, or application issues.
+
+## Troubleshooting Lesson
+
+A website can fail because of different layers:
+
+1. DNS problem
+2. Network connectivity problem
+3. Port/firewall problem
+4. Application/service problem
+
+Understanding where the failure occurs helps cloud engineers troubleshoot efficiently.
