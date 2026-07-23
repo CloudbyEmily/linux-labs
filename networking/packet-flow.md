@@ -16,7 +16,7 @@
 
 ## Troubleshooting Notes
 
-## What I Learned
+#
 
 # Packet Flow
 
